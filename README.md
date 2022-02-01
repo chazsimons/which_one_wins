@@ -1,24 +1,11 @@
-# README
+# Which One Wins?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pits two random comic characters against each other and lets the user select which one he thinks is more likely to win.
 
-Things you may want to cover:
+Results are stored and characters are ranked based on the highest percentage of them being selected to win.
 
-* Ruby version
+This readme will be updated when I've got something better to say about it.
 
-* System dependencies
+Uses the following API
+https://comicvine.gamespot.com/api/documentation
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
