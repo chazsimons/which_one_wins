@@ -1,10 +1,16 @@
-<h1>Which One Wins?</h1>
+<h1 class='text-center'>Which One Wins?</h1>
 
 <div class="container">
-  <div class="row">
+  <div class="row justify-content-md-center">
     <div class="col">
       <h3><%= @characters[0].name %></h3><br>
       <img src='<%= @characters[0].image %>' width=400 height=500>
+    </div>
+    <div class="col-sm-auto">
+      <br>
+      <br>
+      <br>
+      <h3 class='text-center'>Vs.</h3>
     </div>
     <div class="col">
       <h3><%= @characters[1].name %></h3><br>

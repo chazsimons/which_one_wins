@@ -1,7 +1,11 @@
 class CharactersFacade
 
   def self.get_two
-    characters = CharacterService.random_two
-    Character.new(characters[:results][rand(0..99)])
+    characters = []
+    2.times do
+      all_characters = CharacterService.random_two
+      characters << Character.new(all_characters[:results][rand(0..99)])
+    end
+    characters
   end
 end
