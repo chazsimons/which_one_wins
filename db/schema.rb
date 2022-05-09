@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2022_02_02_180227) do
   create_table "votes", force: :cascade do |t|
     t.string "name"
     t.string "image"
-    t.integer "wins"
+    t.integer "wins", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
