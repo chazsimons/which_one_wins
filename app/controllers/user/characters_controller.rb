@@ -6,11 +6,12 @@ class User::CharactersController < ApplicationController
 
   def update
     if Vote.exists?(name: params[:name])
-      @winner = Vote.update(wins: @winner.wins += 1)
+      winner = Vote.find(params[:name])
+      Vote.update(wins: winner.wins += 1)
       redirect_to "/"
     else
-      @winner = Vote.create(vote_params)
-      @winner.update(wins: @winner.wins += 1)
+      winner = Vote.create(vote_params)
+      winner.update(wins: winner.wins += 1)
       redirect_to "/"
     end
   end
