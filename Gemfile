@@ -36,6 +36,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 5.1.3'
 gem 'faraday'
 gem 'jquery-rails'
+gem 'figaro'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -46,7 +48,6 @@ group :development, :test do
   gem 'capybara'
   gem 'shoulda-matchers'
   gem 'orderly'
-  gem 'figaro'
 end
 
 group :development do
